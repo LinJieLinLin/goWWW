@@ -27,7 +27,7 @@ func ServerConfig() {
 	project_dir = strings.Replace(project_dir, "\\src", "", 1)
 	fmt.Println("project dir is ", project_dir)
 	configMap["PROJECT_DIR"] = project_dir
-	if config_byte, err := ioutil.ReadFile(project_dir + "/c.json"); err != nil {
+	if config_byte, err := ioutil.ReadFile(project_dir + "/c.properties"); err != nil {
 		fmt.Println(err)
 	} else {
 		fmt.Println(json.Unmarshal(config_byte, &configMap))
