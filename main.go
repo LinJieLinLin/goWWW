@@ -11,7 +11,12 @@ import (
 )
 
 func main() {
-	http.Handle("/", http.FileServer(http.Dir("www")))
+	dir:= "www"
+	getDir:=GetConfig("WWW")
+	if ""!=getDir.(string){
+		dir = getDir.(string)
+	}
+	http.Handle("/", http.FileServer(http.Dir(dir)))
 	srvPort := GetConfig("PORT")
 	if err := http.ListenAndServe(":"+srvPort.(string), nil); nil != err {
 		fmt.Println(err)
