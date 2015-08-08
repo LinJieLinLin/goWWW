@@ -1,0 +1,1 @@
+nssm install myWeb %cd%/goWeb.exe
