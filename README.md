@@ -1,5 +1,4 @@
-# goWWW
+# goWWW for windows 
 # a web server as apache。
-## for windows
-## run buildNow.cmd to build .exe
-## run install.cmd to add a win server.
+###### run buildNow.cmd to build
+###### run install.cmd to add a win server.
