@@ -1,1 +1,1 @@
-{"name":"Gowww","tagline":"GoWWW","body":"# goWWW\r\na web server as apache\r\n# RUN:\r\nbuildNow.cmd\r\n","google":"","note":"Don't delete this file! It's used internally to help with page regeneration."}
+{"name":"goWWW","tagline":"goWWW","body":"# goWWW for windows \r\n# a web server as apache。\r\n###### run buildNow.cmd to build\r\n###### run install.cmd to add a win server.\r\n","google":"","note":"Don't delete this file! It's used internally to help with page regeneration."}
