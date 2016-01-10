@@ -18,7 +18,7 @@ func main() {
 	}
 	http.Handle("/", http.FileServer(http.Dir(dir)))
 	srvPort := GetConfig("PORT")
-	if err := http.ListenAndServe(":"+srvPort.(string), nil); nil != err {
+	if err := http.ListenAndServe("0.0.0.0:"+srvPort.(string), nil); nil != err {
 		fmt.Println(err)
 	}
 }
